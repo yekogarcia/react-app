@@ -1,3 +1,4 @@
+import { LazyPage1 } from "."
 
 export const LazyPage3= () => {
   return (
@@ -6,5 +7,7 @@ export const LazyPage3= () => {
     </>
   )
 }
+
+export default LazyPage1;
 
 
