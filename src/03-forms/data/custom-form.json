@@ -1,0 +1,53 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "label": "first Name",
+    "placeholder": "first Name",
+    "value": "",
+    "validations": [
+        {
+            "type": "required"
+        },
+        {
+            "type": "minLength",
+            "value": 5
+        }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "label": "Email",
+    "placeholder": "Email",
+    "value": "",
+    "validations": [
+        {
+            "type": "required"
+        },
+        {
+            "type": "email"
+        }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "favorite Game",
+    "value": "",
+    "options": [
+      {
+        "id": "Game1",
+        "label": "Game1"
+      },
+      {
+        "id": "Game2",
+        "label": "Game2"
+      },
+      {
+        "id": "Game3",
+        "label": "Game3"
+      }
+    ]
+  }
+]

@@ -9,6 +9,8 @@ import { FormikBasicPage } from "../03-forms/pages/FormikBasicPage";
 import { FormikYupPage } from "../03-forms/pages/FormikYupPage";
 import { FormikComponents } from "../03-forms/pages/FormikComponents";
 import { FormikAbstract } from "../03-forms/pages/FormikAbstract";
+import { RegisterFormikPage } from "../03-forms/pages/RegisterFormikPage";
+import { DynamicForm } from "../03-forms/pages/DynamicForm";
 
 export const Navigatios = () => {
   return (
@@ -39,7 +41,7 @@ export const Navigatios = () => {
                 to="/formik-yup"
                 className={({ isActive }) => (isActive ? "nav-active" : "")}
               >
-                Fomik Yup
+                Formik Yup
               </NavLink>
             </li>
             <li>
@@ -47,7 +49,7 @@ export const Navigatios = () => {
                 to="/formik-components"
                 className={({ isActive }) => (isActive ? "nav-active" : "")}
               >
-                Fomik Components
+                Formik Components
               </NavLink>
             </li>
             <li>
@@ -55,7 +57,23 @@ export const Navigatios = () => {
                 to="/formik-abstract"
                 className={({ isActive }) => (isActive ? "nav-active" : "")}
               >
-                Fomik Abstract
+                Formik Abstract
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/register-formik"
+                className={({ isActive }) => (isActive ? "nav-active" : "")}
+              >
+               Register Formik
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dynamic-form"
+                className={({ isActive }) => (isActive ? "nav-active" : "")}
+              >
+               Dinamic Form
               </NavLink>
             </li>
           </ul>
@@ -66,6 +84,8 @@ export const Navigatios = () => {
           <Route path="/formik-basic" element={ <FormikBasicPage /> } />
           <Route path="/formik-yup" element={<FormikYupPage />} />
           <Route path="/formik-abstract" element={<FormikAbstract />} />
+          <Route path="/register-formik" element={<RegisterFormikPage />} />
+          <Route path="/dynamic-form" element={<DynamicForm />} />
 
           <Route path="/*" element={<Navigate to="/lazy1" />} />
         </Routes>
